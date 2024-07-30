@@ -1,0 +1,50 @@
+
+  body {
+    background: rgb(13, 110, 117);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Orbitron', sans-serif;
+  }
+  
+  .container {
+    text-align: center;
+  }
+  
+  .clock {
+    color: #fbfeff;
+    font-size: 6vw; 
+    font-weight: bold;
+    border: 0.3em solid rgb(174, 180, 67);
+    border-radius: 50px;
+    padding: 20px; 
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); 
+    background-color: rgba(0, 0, 0, 0.5); 
+  }
+  
+  .head {
+    color: rgb(255, 255, 255);
+    font-family: 'Aldrich', sans-serif; 
+    font-size: 3vw;
+    margin-top: 20px; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /
+  }
+  
+  .clock {
+    animation: glow 2s linear infinite alternate; 
+  }
+  
+  @keyframes glow {
+    from {
+      border-color: rgb(174, 180, 67);
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    }
+    to {
+      border-color: rgb(231, 76, 60);
+      box-shadow: 0 0 20px rgba(231, 76, 60, 0.8);
+    }
+  }
+  
+  
